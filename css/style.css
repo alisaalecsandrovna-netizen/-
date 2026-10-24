@@ -1,0 +1,672 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.5s;
+    scroll-behavior: smooth;
+    font-family: 'Lora';
+}
+/* Обнуление стилей */
+
+body {
+    background-color: #0B1D2C;
+}
+/* Весь фон перекрашиваем */
+
+@font-face {
+    font-family: 'Lora';
+    src: url(../fonts/Lora-VariableFont_wght.ttf);
+}
+/* Подключение шрифта Lora  */
+
+@font-face {
+    font-family: 'a_bosa_nova';
+    src: url(../fonts/abosanovaotlbold.ttf);
+}
+/* Подключение шрифта 'a_bosa_nova' */
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+/* Контейнер для основной информации */
+
+.container2 {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+/* Контейнер с размером 1920 */
+
+.btn2 {
+    display: inline-block;
+    color: #E3E8EE;
+    padding: 24px 48px;
+    border: 2px solid #3D8FA8;
+    background-color: #3D8FA8;
+    border-radius: 3px;
+    align-self: flex-start;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.btn2:hover {
+    color: #3D8FA8;
+    border-color: #3D8FA8;
+    background-color: #3D8FA800;
+}
+/* Класс для стилизации кнопок */
+
+.title h2 {
+    font-size: 64px;
+    color: #E3E8EE;
+    font-weight: 700;
+    text-align: center;
+}
+
+.title h3 {
+    font-size: 48px;
+    font-weight: 400;
+    color: #8FAEC4;
+}
+
+.title p {
+    font-size: 20px;
+    color: #8FAEC4;
+}
+/* Класс title для стилизации */
+
+.background-head-main {
+    background: url(../images/banner/background.png) no-repeat center;
+}
+/* Добавляем фото как фон для баннера и шапки */
+
+@keyframes headerScroll {
+
+    1%,
+    100% {
+        background-color: rgba(143, 174, 196, 0.8);
+    }
+}
+/* Анимация при скроле шапки */
+
+/* Шапка */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    animation: headerScroll linear both;
+    animation-timeline: scroll();
+}
+
+.header-block {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Логотип */
+.logo img {
+    cursor: pointer;
+}
+
+/* Навигация в шапке */
+.header-block nav {
+    display: flex;
+    gap: 48px;
+}
+
+.header-block nav a {
+    color: #E3E8EE;
+    display: inline-block;
+}
+
+/* Увелечение при наведении на ссылку в навигации */
+.header-block nav a:hover {
+    transform: scale(1.3);
+}
+
+/* Стиль кнопки в шапке */
+.btn1 {
+    display: inline-block;
+    color: #E3E8EE;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 32px;
+    border: 2px solid #E3E8EE;
+    border-radius: 3px;
+    background-color: #E3E8EE00;
+}
+
+.btn1:hover {
+    background-color: #E3E8EE;
+    color: #3D8FA8;
+}
+
+/* Баннер */
+main {
+    display: flex;
+    align-items: flex-end;
+    height: 1200px;
+    padding-bottom: 189px;
+}
+
+.main-block {
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+}
+
+.main-block .btn2 {
+    text-transform: uppercase;
+}
+
+/* Текст баннера */
+.main-text {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    max-width: 940px;
+}
+
+.main-text h1 {
+    font-family: 'a_bosa_nova';
+    font-size: 272px;
+    color: #E3E8EE;
+}
+
+.main-text p {
+    font-size: 48px;
+    color: #E3E8EE;
+    line-height: 1.2;
+}
+
+/* Блок О нас */
+.about {
+    background: url(../images/about/background.png) no-repeat center;
+    height: 1693px;
+    background-size: cover;
+    position: relative;
+}
+
+/* Фото скалы для наложения сверху */
+.about img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.about-block {
+    padding-top: 446px;
+}
+
+/* Плашка с тексом */
+.about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    padding: 56px 203px 56px 56px;
+    max-width: 677px;
+    border-radius: 3px;
+    background-color: #0B1D2C;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Блок особенности */
+.features {
+    background: url(../images/features/background.png) no-repeat center;
+    height: 905px;
+}
+/* Добавляем фото как фон этого блока */
+
+.features-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 905px;
+    padding-bottom: 15px;
+}
+
+/* Первая строка блока */
+.features-item1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 56px 300px;
+    border-bottom: 3px solid #E3E8EE;
+    border-top: 3px solid #E3E8EE;
+}
+
+/* Вторая строка  */
+.features-item2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 56px 300px;
+    border-bottom: 3px solid #E3E8EE;
+}
+
+/* Надписи на строках блока (Цифры и подпись) */
+.features-element {
+    color: #E3E8EE;
+    font-size: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Размер шрифта цифр */
+.features-element span {
+    font-size: 152px;
+    line-height: 0.8;
+}
+
+/* Блок Локации */
+.locations {
+    background: linear-gradient(rgba(11, 29, 44, 0.7), rgba(11, 29, 44, 0.7)), url(../images/locations/background.png) no-repeat center;
+    height: 2500px;
+}
+
+.locations-block {
+    position: relative;
+    padding-top: 180px;
+}
+
+/* Фото пути добавленное на фон */
+#path {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+/* Класс для фото локации и названия */
+.locations-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Все нечетные классы с фотографией и названием локации переворачиваем */
+.locations-section:nth-child(2n+1) {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: end;
+}
+
+/* Название локации */
+.locations-text {
+    max-width: 590px;
+    line-height: 1.2;
+    margin-left: 300px;
+}
+
+/* Другой отступ для нечетных блоков с фотографией и названием локации */
+.locations-text:nth-child(2n+1) {
+    margin-right: 300px;
+}
+
+/* Класс для фото и оверлея */
+.locations-card {
+    position: relative;
+}
+
+/* Фото локации */
+.locations-card img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Оверлей на фотографиях, пока что не видный */
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    background-color: rgba(11, 29, 44, 0.6);
+}
+
+/* Локации находящиеся справа */
+.card-overlay.right {
+    padding-right: 300px;
+    padding-left: 40px;
+    text-align: end;
+}
+
+/* Локации находящиеся слева */
+.card-overlay.left {
+    padding-left: 300px;
+    padding-right: 40px;
+    text-align: start;
+}
+
+.card-overlay p {
+    font-size: 20px;
+    color: #E3E8EE;
+    line-height: 1.3;
+}
+
+/* При наведении фото размывается */
+.locations-card:hover img {
+    filter: blur(5px);
+}
+
+/* При наведении на фото становится видно оверлей */
+.locations-card:hover .card-overlay {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* Блок Галерея пуутешествий */
+.gallery {
+    margin-top: 110px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Класс чтобы добавить фотографии паттерна по краям */
+.gallery-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/* Класс для всех фотографий */
+/* Создаем сетку для галереи с двумя столбцами одинакового размера строки определяются автоматически */
+.gallery-block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 90px;
+}
+
+/* Чтобы эта фотография была родителем для оверлея */
+.gallery-photo {
+    position: relative;
+}
+
+/* Чтобы было впереди других карточек при наведении */
+.gallery-photo:hover {
+    z-index: 10;
+}
+
+.gallery-photo img {
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* При наведении на фото оно размывается и увеличивается */
+.gallery-photo:hover img {
+    filter: blur(5px);
+    transform: scale(1.2);
+}
+
+/* Оверлей который становится видно только при наведении */
+.photo-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    padding: 30px 40px;
+    background-color: rgba(11, 29, 44, 0.6);
+    pointer-events: none;
+}
+
+/* Чтобы было видно оверлей */
+.gallery-photo:hover .photo-overlay {
+    opacity: 1;
+    transform: scale(1.23);
+}
+
+.photo-overlay.title h3 {
+    font-size: 20px;
+    color: #E3E8EE;
+    opacity: 70%;
+}
+
+.photo-overlay.title p {
+    color: #E3E8EE;
+    opacity: 80%;
+    font-size: 16px;
+}
+
+/* Вопросы  */
+.questions {
+    margin-top: 110px;
+    background: url(../images/questions/background.png) no-repeat center;
+    width: 100%;
+    height: 1230px;
+}
+
+.questions-block {
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    align-items: center;
+}
+
+/* Класс для позицционирования всех вопросов */
+.questions-items {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.questions-items details {
+    padding: 25px;
+    border-radius: 3px;
+    background-color: rgba(11, 29, 44, 0.5);
+    display: block;
+    width: 1320px;
+}
+
+.questions-items summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.questions-title {
+    color: #E3E8EE;
+    font-size: 24px;
+    list-style: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.questions-text {
+    color: #E3E8EE;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+/* Когда наш вопрос раскрыт то иконка для его переключения переворачивается и стрелка становится смотрящей вверх */
+.questions-items details[open] .questions-arrow {
+    transform: rotate(180deg);
+}
+
+/* класс для формы отправки заявки */
+.form {
+    background: url(../images/form/background.png) no-repeat center;
+    width: 100%;
+    height: 920px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-block {
+    display: inline-block;
+    margin-top: 110px;
+    border-radius: 3px;
+    padding: 40px;
+    background-color: rgba(143, 174, 196, 0.6);
+    align-self: flex-start;
+}
+
+.form-block .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    gap: 16px;
+}
+
+.form-block .title p {
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.3;
+    max-width: 540px;
+    color: rgba(227, 232, 238, 0.7);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+form .btn2 {
+    align-self: center;
+    cursor: pointer;
+}
+
+form .btn2:hover {
+    box-shadow: 0 1px 7px rgba(11, 29, 44, 0.6);
+    background-color: #e3e8ee;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.form-input input {
+    padding: 20px;
+    background-color: #E3E8EE;
+    border: 0;
+    width: 539px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* поле ввода при клике на него, когда вводишьь текст */
+.form-input input:focus {
+    border-radius: 3px;
+    outline: none;
+    box-shadow: 0 0 10px rgba(11, 29, 44, 0.8);
+}
+
+/* стилизация текста внутри поля ввода */
+.form-input input::placeholder {
+    font-size: 16px;
+    color: #8FAEC4;
+}
+
+/* при вводе своего текста убираем текст подсказку внутри input  */
+.form-input input:focus::placeholder {
+    color: #8FAEC400;
+}
+
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.form-checkbox input {
+    cursor: pointer;
+}
+
+.form-checkbox label {
+    font-size: 16px;
+    color: #E3E8EE;
+}
+
+.form-checkbox label a {
+    font-size: 16px;
+    color: #E3E8EE;
+    text-decoration: underline #E3E8EE;
+}
+
+/* Подвал */
+footer {
+    background: url(../images/footer/background.png) no-repeat center;
+    width: 100%;
+    height: 490px;
+}
+
+.footer-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    gap: 44px;
+    height: 100%;
+    padding-bottom: 30px;
+}
+
+.footer-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Навигация в подвале  */
+.footer-content nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-content nav a {
+    color: #0B1D2C;
+    display: inline-block;
+}
+
+/* текст в навигации подвала увеличивается при наведение на него */
+.footer-content nav a:hover {
+    transform: scale(1.3);
+}
+
+.footer-content .icons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* при наведении на иконки они увеличиваются */
+.footer-content .icons a:hover {
+    transform: scale(1.2);
+}

@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>За гранью</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Подключаем css  -->
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+    <!-- Подключаем фавикон -->
+</head>
+
+<body>
+
+    <!-- Фон который применяется для баннера и на который накладывается шапка -->
+
+    <div class="background-head-main">
+
+        <!-- Шапка сайта -->
+
+        <header>
+            <div class="header-block container">
+
+                <!-- Логотип  -->
+                <div class="logo">
+
+                    <a href="#">
+
+                        <img src="images/logo.svg" alt="логотип">
+
+                    </a>
+
+                </div>
+
+
+                <!-- Навигация на шапке -->
+                <nav>
+                    <a href="#about">О нас</a>
+                    <a href="#locations">Локации</a>
+                    <a href="#gallery">Галерея</a>
+                </nav>
+
+                <!-- Ссылка на форму для того чтобы из нее сделать кнопку -->
+                <a href="#forma" class="btn1">Подать заявку</a>
+
+            </div>
+        </header>
+
+        <!-- Баннер  -->
+        <main class="container">
+
+            <div class="main-block">
+
+                <!-- Текст на баннере -->
+                <div class="main-text">
+                    <h1>Байкал</h1>
+                    <p>За гранью привычного. Байкал ждёт именно тебя!</p>
+                </div>
+
+                <!-- Ссылка которая ведет на форму и применяется для создания кнопки -->
+                <a href="#forma" class="btn2">Хочу на Байкал</a>
+            </div>
+
+        </main>
+
+    </div>
+
+    <!-- Блок "О нас" -->
+    <div class="about container2" id="about">
+
+        <!-- Фото скалы для наложения сверху -->
+        <img src="images/about/rock.png" alt="скала">
+
+        <div class="about-block container title">
+
+            <!-- Плашка с текстом -->
+            <div class="about-text">
+
+                <!-- Заголовок -->
+                <h2>О нас</h2>
+
+                <!-- Основной текст -->
+                <div class="about-section">
+                    <p>Мы — «За гранью». Авторский тур-проект по зимнему Байкалу. </p>
+
+                    <p>Мы делаем небольшие экспедиции для тех, кто готов выйти за грань.</p>
+
+                    <p>Мы верим, что настоящий лёд — это не картинка из интернета, а то, что нужно увидеть и
+                        почувствовать.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Блок "Особенности" -->
+    <div class="features">
+
+        <div class="features-block container2">
+
+            <!-- Первая строка -->
+            <div class="features-item1">
+
+                <!-- Цифра 1 -->
+                <div class="features-element">
+                    <p><span>1642</span> метров</p>
+                    <p>глубина Байкала</p>
+                </div>
+
+                <!-- Цифра 2 -->
+                <div class="features-element">
+                    <p><span>100</span> %</p>
+                    <p>авторский маршрут</p>
+                </div>
+
+            </div>
+
+            <!-- Вторая строка -->
+            <div class="features-item2">
+
+                <!-- Цифра 3 -->
+                <div class="features-element">
+                    <p><span>5</span> дней</p>
+                    <p>за гранью привычного</p>
+                </div>
+
+                <!-- Цифра 4 -->
+                <div class="features-element">
+                    <p><span>75 000</span> ₽</p>
+                    <p>цена на человека</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Блок "Локации" -->
+    <div class="locations" id="locations">
+
+        <!-- Заголовок -->
+        <div class="title">
+            <h2>Локации</h2>
+        </div>
+
+
+        <!-- Общий контейнер для всех локаций -->
+        <div class="locations-block title container2">
+
+            <!-- Линия пути на фоне -->
+            <img id="path" src="images/locations/path.svg" alt="путь">
+
+            <!-- Локация 1 -->
+            <div class="locations-section">
+
+                <!-- Название -->
+                <div class="locations-text">
+                    <h3>Листвянка — ворота Байкала</h3>
+                </div>
+
+
+                <div class="locations-card">
+
+                    <!-- Фото -->
+                    <img src="images/locations/loc1.png" alt="картинка">
+
+                    <!-- Текст при наведении -->
+                    <div class="card-overlay container right">
+
+                        <p>«Ворота Байкала». Здесь находится исток Ангары и 
+                        легендарный Шаман-камень. В Байкальском
+                        музее можно увидеть живых нерп, а с Камня Черского 
+                        открывается панорамный вид на озеро.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Локация 2 -->
+            <div class="locations-section">
+
+                <!-- Название -->
+                <div class="locations-text">
+                    <h3>Малое Море —ледяные гроты</h3>
+                </div>
+
+                <div class="locations-card">
+
+                    <!-- Фото -->
+                    <img src="images/locations/loc2.png" alt="картинка">
+
+                    <!-- Текст при наведении -->
+                    <div class="card-overlay container left">
+
+                        <p>Узкий пролив между берегом и островом Ольхон. Зимой здесь самый прозрачный лёд на Байкале —
+                            ветра сдувают снег, и поверхность становится как стекло. Ледяные гроты и торосы — главные
+                            впечатления этого места.</p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <!-- Локация 3 -->
+            <div class="locations-section">
+
+                <!-- Название -->
+                <div class="locations-text">
+                    <h3>Ольхон — сердце Байкала</h3>
+                </div>
+
+
+                <div class="locations-card">
+
+                    <!-- Фото -->
+                    <img src="images/locations/loc3.png" alt="картинка">
+
+                    <!-- Текст при наведении -->
+                    <div class="card-overlay container right">
+
+                        <p>Крупнейший остров Байкала, его называют «сердцем» озера. Здесь находится почитаемая скала
+                            Шаманка и мыс Хобой. Ольхон славится солнечной погодой и разнообразием пейзажей — от степей
+                            до лесов.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Локация 4 -->
+            <div class="locations-section">
+
+                <!-- Название -->
+                <div class="locations-text">
+                    <h3>Север Ольхона — пузырьковый лёд</h3>
+                </div>
+
+
+                <div class="locations-card">
+
+                    <!-- Фото -->
+                    <img src="images/locations/loc4.png" alt="картинка">
+
+                    <!-- Текст при наведении -->
+                    <div class="card-overlay container left">
+
+                        <p>Самая живописная и труднодоступная часть острова. Мыс Хобой — северная оконечность Ольхона с
+                            панорамным видом на Байкал. Здесь же можно увидеть пузырьковый лёд и снежные пещеры.</p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Блок "Галерея" -->
+    <div class="gallery" id="gallery">
+
+        <!-- Заголовок -->
+        <div class="title container">
+            <h2>Галерея путешествий</h2>
+        </div>
+
+
+        <div class="gallery-section container2">
+
+            <!-- Паттерн слева -->
+            <img src="images/gallery/patern1.svg" alt="паттерн">
+
+            <div class="gallery-block container">
+
+
+                <!-- Фото 1 -->
+                <div class="gallery-photo">
+                    <img src="images/gallery/img1.png" alt="фото">
+
+                    <!-- Оверлей при наведении и подпись при наведении -->
+                    <div class="photo-overlay title">
+                        <h3>Ледяные соты</h3>
+                        <p>12.12.2025</p>
+                    </div>
+                </div>
+
+                <!-- Фото 2 -->
+                <div class="gallery-photo">
+                    <img src="images/gallery/img2.png" alt="фото">
+
+                    <!-- Оверлей при наведении и подпись при наведении -->
+                    <div class="photo-overlay title">
+                        <h3>Хрустальный лабиринт</h3>
+                        <p>10.01.2025</p>
+                    </div>
+                </div>
+
+                <!-- Фото 3 -->
+                <div class="gallery-photo">
+                    <img src="images/gallery/img3.png" alt="фото">
+
+                    <!-- Оверлей при наведении и подпись при наведении -->
+                    <div class="photo-overlay title">
+                        <h3>Сердце Байкала</h3>
+                        <p>15.12.2024</p>
+                    </div>
+                </div>
+
+                <!-- Фото 4 -->
+                <div class="gallery-photo">
+                    <img src="images/gallery/img4.png" alt="фото">
+
+                    <!-- Оверлей при наведении и подпись при наведении -->
+                    <div class="photo-overlay title">
+                        <h3>Дорога по льду</h3>
+                        <p>18.02.2025</p>
+                    </div>
+                </div>
+
+                <!-- Фото 5 -->
+                <div class="gallery-photo">
+                    <img src="images/gallery/img5.png" alt="фото">
+
+                    <!-- Оверлей при наведении и подпись при наведении -->
+                    <div class="photo-overlay title">
+                        <h3>Ледяные своды</h3>
+                        <p>08.03.2025</p>
+                    </div>
+                </div>
+
+                <!-- Фото 6 -->
+                <div class="gallery-photo">
+                    <img src="images/gallery/img6.png" alt="фото">
+
+                    <!-- Оверлей при наведении и подпись при наведении -->
+                    <div class="photo-overlay title">
+                        <h3>Первый свет</h3>
+                        <p>22.03.2025</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <!-- Паттерн справа -->
+            <img src="images/gallery/patern2.svg" alt="паттерн">
+
+        </div>
+
+    </div>
+
+
+    <!-- Блок "Вопросы" Аккордион-->
+    <div class="questions container2">
+
+        <div class="questions-block container">
+
+            <!-- Заголовок -->
+            <div class="title">
+                <h2>Частые вопросы</h2>
+            </div>
+
+
+
+            <div class="questions-items">
+
+                <!-- Вопрос 1 -->
+                <!-- Сразу развернутый -->
+                <details open name="faq">
+
+                    <!-- Вопрос + стрелка -->
+                    <summary class="questions-title">
+                        Как проходит тур?
+                        <img src="images/questions/arrow.svg" alt="стрелочка" class="questions-arrow">
+                    </summary>
+
+                    <!-- Ответ -->
+                    <p class="questions-text">Тур длится 5 дней. В первый день встречаемся в Иркутске, заселяемся,
+                        знакомимся. Затем — лёд Байкала, Ольхон, ледяные гроты и баня.</p>
+
+                </details>
+
+
+                <!-- Вопрос 2 -->
+                <details name="faq">
+
+                    <summary class="questions-title">
+                        Что входит в стоимость?
+                        <img src="images/questions/arrow.svg" alt="стрелочка" class="questions-arrow">
+                    </summary>
+
+                    <p class="questions-text">Трансфер, проживание, питание, гид, выезды на лёд, баня. Не входит:
+                        авиабилеты до Иркутска и личные расходы.</p>
+
+                </details>
+
+
+                <!-- Вопрос 3 -->
+                <details name="faq">
+
+                    <summary class="questions-title">
+                        Нужна ли специальная подготовка?
+                        <img src="images/questions/arrow.svg" alt="стрелочка" class="questions-arrow">
+                    </summary>
+
+                    <p class="questions-text">Нет. Тур подходит для любого уровня подготовки. Главное — тёплая одежда и
+                        желание увидеть Байкал.</p>
+
+                </details>
+
+
+                <!-- Вопрос 4 -->
+                <details name="faq">
+
+                    <summary class="questions-title">
+                        Как забронировать?
+                        <img src="images/questions/arrow.svg" alt="стрелочка" class="questions-arrow">
+                    </summary>
+
+                    <p class="questions-text">Оставьте заявку на сайте — мы свяжемся с вами в течение 15 минут,
+                        расскажем подробности и забронируем место.</p>
+
+                </details>
+
+
+                <!-- Вопрос 5 -->
+                <details name="faq">
+
+                    <summary class="questions-title">
+                        Сколько человек в группе?
+                        <img src="images/questions/arrow.svg" alt="стрелочка" class="questions-arrow">
+                    </summary>
+
+                    <p class="questions-text">Небольшие группы — до 12 человек. Это позволяет уделить внимание каждому и
+                        сделать тур комфортным.</p>
+
+                </details>
+
+                <!-- Для того чтобы можно было развернуть только один вопрос, при этом другой автоматически сворачивался нужно задать одинаковое  name для details  -->
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Блок "Форма заявки" -->
+    <div class="form container2" id="forma">
+
+        <div class="form-block container">
+
+            <!-- Заголовок и подзаголовок -->
+            <div class="title">
+                <h2>Хотите с нами?</h2>
+                <p>Оставьте заявку - мы с вами свяжемся, и забронируем место!</p>
+            </div>
+
+            <!-- Форма -->
+            <form>
+
+                <div class="form-input">
+
+                    <input type="text" placeholder="Ваше имя:" required>
+                    <input type="tel" placeholder="Ваш телефон:" required>
+                    <input type="email" placeholder="Ваш email:" required>
+
+                </div>
+
+                <!-- Чекбокс согласие -->
+                <div class="form-checkbox">
+
+                    <input type="checkbox" required>
+                    <label>
+                        Я согласен с
+                        <a href="document/Политика_конфеденциальности.docx" target="_blank">политикой
+                            конфеденциальности</a>
+
+                    </label>
+
+                </div>
+
+                <!-- Кнопка отправки -->
+                <button type="submit" class="btn2">Отправить</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- Подвал -->
+    <footer class="container2">
+
+        <div class="footer-block container">
+
+            <div class="footer-content">
+
+                <!-- Навигация -->
+                <nav>
+                    <a href="#about">О нас</a>
+                    <a href="#locations">Локации</a>
+                    <a href="#gallery">Галерея</a>
+                </nav>
+
+                <!-- Логотип -->
+                <div class="logo">
+
+                    <a href="#">
+
+                        <img src="images/footer/logo2.svg" alt="логотип">
+
+                    </a>
+
+                </div>
+
+                <!-- Контакты и соцсети -->
+                <div class="icons">
+
+                    <a href="https://vk.ru/zavlissa" target="_blank"><img src="images/footer/icon-vk.svg" alt="vk"></a>
+
+                    <a href="mailto:alisaalecsandrovna@gmail.com"><img src="images/footer/icon-mail.svg" alt="mail"></a>
+
+                    <a href="tel:+79047165929"><img src="images/footer/icon-phone.svg" alt="tel"></a>
+
+                </div>
+
+            </div>
+
+            <!-- Копирайт -->
+            <p>© За гранью, 2026. Разработала: Заварихина Алиса Александровна, группа 325 ВЕБ.</p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
